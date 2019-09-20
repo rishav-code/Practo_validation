@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.atmecs.practo.constant.FilePath;
@@ -36,8 +37,14 @@ public class TestBase {
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); 
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		}
+
+	}
+
+	@AfterSuite
+	public void clodeDriver() {
+		driver.close();
 
 	}
 

@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+<testng-results skipped="0" failed="0" ignored="5" total="9" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109807" started-at="2019-09-19T14:17:20Z" finished-at="2019-09-19T14:19:09Z">
+  <suite name="Default suite" duration-ms="113981" started-at="2019-09-20T12:04:58Z" finished-at="2019-09-20T12:06:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109807" started-at="2019-09-19T14:17:20Z" finished-at="2019-09-19T14:19:09Z">
+    <test name="Default test" duration-ms="113981" started-at="2019-09-20T12:04:58Z" finished-at="2019-09-20T12:06:52Z">
       <class name="com.atmecs.practo.testscripts.SelectPharmacyTestScript">
-        <test-method status="PASS" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.practo.testscripts.SelectPharmacyTestScript@6e1567f1]" name="intitailizeBrowser" is-config="true" duration-ms="19829" started-at="2019-09-19T14:17:00Z" finished-at="2019-09-19T14:17:20Z">
+        <test-method status="PASS" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.practo.testscripts.SelectPharmacyTestScript@9660f4e]" name="intitailizeBrowser" is-config="true" duration-ms="14281" started-at="2019-09-20T12:04:44Z" finished-at="2019-09-20T12:04:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intitailizeBrowser -->
-        <test-method status="PASS" signature="isRedirectionCorrect()[pri:1, instance:com.atmecs.practo.testscripts.SelectPharmacyTestScript@6e1567f1]" name="isRedirectionCorrect" duration-ms="28" started-at="2019-09-19T14:17:20Z" finished-at="2019-09-19T14:17:20Z">
+        <test-method status="PASS" signature="isRedirectionCorrect()[pri:1, instance:com.atmecs.practo.testscripts.SelectPharmacyTestScript@9660f4e]" name="isRedirectionCorrect" duration-ms="155" started-at="2019-09-20T12:04:59Z" finished-at="2019-09-20T12:04:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isRedirectionCorrect -->
-        <test-method status="PASS" signature="clickDepartment()[pri:2, instance:com.atmecs.practo.testscripts.SelectPharmacyTestScript@6e1567f1]" name="clickDepartment" duration-ms="2898" started-at="2019-09-19T14:17:20Z" finished-at="2019-09-19T14:17:23Z">
+        <test-method status="PASS" signature="clickDepartment()[pri:2, instance:com.atmecs.practo.testscripts.SelectPharmacyTestScript@9660f4e]" name="clickDepartment" duration-ms="2737" started-at="2019-09-20T12:04:59Z" finished-at="2019-09-20T12:05:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickDepartment -->
       </class> <!-- com.atmecs.practo.testscripts.SelectPharmacyTestScript -->
       <class name="com.atmecs.practo.testscripts.SelectProductTestScript">
-        <test-method status="PASS" signature="productSelect()[pri:3, instance:com.atmecs.practo.testscripts.SelectProductTestScript@5cb9f472]" name="productSelect" duration-ms="101618" started-at="2019-09-19T14:17:23Z" finished-at="2019-09-19T14:19:04Z">
+        <test-method status="PASS" signature="productSelect(java.lang.String)[pri:3, instance:com.atmecs.practo.testscripts.SelectProductTestScript@5a8806ef]" name="productSelect" duration-ms="101043" started-at="2019-09-20T12:05:05Z" data-provider="productinput" finished-at="2019-09-20T12:06:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pain]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productSelect -->
       </class> <!-- com.atmecs.practo.testscripts.SelectProductTestScript -->
       <class name="com.atmecs.practo.testscripts.ProductCheckoutTestScript">
-        <test-method status="PASS" signature="checkout()[pri:4, instance:com.atmecs.practo.testscripts.ProductCheckoutTestScript@cb644e]" name="checkout" duration-ms="5226" started-at="2019-09-19T14:19:04Z" finished-at="2019-09-19T14:19:09Z">
+        <test-method status="PASS" signature="checkout(java.lang.String)[pri:4, instance:com.atmecs.practo.testscripts.ProductCheckoutTestScript@6c49835d]" name="checkout" duration-ms="6098" started-at="2019-09-20T12:06:46Z" data-provider="cityinput" finished-at="2019-09-20T12:06:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkout -->

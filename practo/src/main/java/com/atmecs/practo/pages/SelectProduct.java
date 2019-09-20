@@ -7,7 +7,7 @@ import com.atmecs.practo.testbase.TestBase;
 public class SelectProduct extends TestBase {
 	Findloc loc = new Findloc();
 
-	public void searcMedicine() {
+	public void searcMedicine(String medicine) {
 		
 		CommonUtlity.clickElement(loc.getlocator("loc.homepage.pain.click"));
 	
@@ -16,7 +16,7 @@ public class SelectProduct extends TestBase {
 			driver.switchTo().window(handle);
 		}
 		CommonUtlity.isElementVisible("loc.selectproduct.balm.click");
-		CommonUtlity.clickAndSendText(loc.getlocator("loc.searchmed.click"), 30, "pain");
+		CommonUtlity.clickAndSendText(loc.getlocator("loc.searchmed.click"), 30, medicine);
 		CommonUtlity.clickElement(loc.getlocator("loc.searchmed.click"));
 
 		CommonUtlity.isElementVisible("loc.selectmed.dpdn");

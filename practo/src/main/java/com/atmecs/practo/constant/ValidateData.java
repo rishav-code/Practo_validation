@@ -7,18 +7,18 @@ import com.atmecs.practo.util.ReadProp;
 
 public class ValidateData {
 
-	static Properties phptravelsvalidate;
+	static Properties practovalidate;
 
 	public ValidateData() {
 		try {
-			phptravelsvalidate = ReadProp.loadProperty(FilePath.VALIDATION_FILE);
+			practovalidate = ReadProp.loadProperty(FilePath.VALIDATION_FILE);
 		} catch (IOException e) {
 			e.getMessage();
 		}
 	}
 
 	public static String getData(String key) {
-		String value = phptravelsvalidate.getProperty(key);
+		String value = practovalidate.getProperty(key);
 		return value;
 
 	}
