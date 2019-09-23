@@ -19,6 +19,9 @@ public class SelectPharmacyTestScript extends TestBase{
 	@Test(priority = 2)
 	public void clickDepartment() {
 		pharm.selectDepartment();
+		pharmvalidation. colourvalidate();
 		pharmvalidation.pharmacyVisible();
+		Pharmacy pharm = new Pharmacy();
+		pharm.selectDepartment();
 	}
 }

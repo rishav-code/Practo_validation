@@ -9,13 +9,67 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">113,981</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">206,218</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.atmecs.practo.testscripts.ProductCheckoutTestScript</td><td><a href="#m0">checkout</a></td><td rowspan="1">1568981206823</td><td rowspan="1">6098</td></tr><tr class="passedodd"><td rowspan="2">com.atmecs.practo.testscripts.SelectPharmacyTestScript</td><td><a href="#m1">clickDepartment</a></td><td rowspan="1">1568981099241</td><td rowspan="1">2737</td></tr><tr class="passedodd"><td><a href="#m2">isRedirectionCorrect</a></td><td rowspan="1">1568981099082</td><td rowspan="1">155</td></tr><tr class="passedeven"><td rowspan="1">com.atmecs.practo.testscripts.SelectProductTestScript</td><td><a href="#m3">productSelect</a></td><td rowspan="1">1568981105728</td><td rowspan="1">101043</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.atmecs.practo.testscripts.ProductCheckoutTestScript</td><td><a href="#m0">productSelect</a></td><td rowspan="1">1569245819174</td><td rowspan="1">42938</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.atmecs.practo.testscripts.ProductCheckoutTestScript</td><td><a href="#m1">checkout</a></td><td rowspan="1">1569245862160</td><td rowspan="1">8601</td></tr><tr class="passedodd"><td rowspan="2">com.atmecs.practo.testscripts.SelectPharmacyTestScript</td><td><a href="#m2">clickDepartment</a></td><td rowspan="1">1569245685369</td><td rowspan="1">18088</td></tr><tr class="passedodd"><td><a href="#m3">isRedirectionCorrect</a></td><td rowspan="1">1569245685323</td><td rowspan="1">40</td></tr><tr class="passedeven"><td rowspan="1">com.atmecs.practo.testscripts.SelectProductTestScript</td><td><a href="#m4">productSelect</a></td><td rowspan="1">1569245706329</td><td rowspan="1">112788</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.atmecs.practo.testscripts.ProductCheckoutTestScript#checkout</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Hyderabad</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.atmecs.practo.testscripts.SelectPharmacyTestScript#clickDepartment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.atmecs.practo.testscripts.SelectPharmacyTestScript#isRedirectionCorrect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.atmecs.practo.testscripts.SelectProductTestScript#productSelect</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pain</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.atmecs.practo.testscripts.ProductCheckoutTestScript#productSelect</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pain</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Pharmacy&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-2&apos;, revision: &apos;f148142cf8&apos;, time: &apos;2019-07-01T20:55:26&apos;
+System info: host: &apos;ATMECSINLT-033&apos;, ip: &apos;55.55.52.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\RISHAV~1.KUM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:58129}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56342073ce5ed87d777b0eb620c0ba7b
+*** Element info: {Using=xpath, value=//div[text()=&apos;Pharmacy&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at com.atmecs.practo.helper.CommonUtlity$1.apply(CommonUtlity.java:28)
+	at com.atmecs.practo.helper.CommonUtlity$1.apply(CommonUtlity.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.atmecs.practo.helper.CommonUtlity.clickElement(CommonUtlity.java:26)
+	at com.atmecs.practo.pages.Pharmacy.selectDepartment(Pharmacy.java:22)
+	at com.atmecs.practo.testscripts.ProductCheckoutTestScript.productSelect(ProductCheckoutTestScript.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.atmecs.practo.testscripts.ProductCheckoutTestScript#checkout</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Hyderabad</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.atmecs.practo.testscripts.SelectPharmacyTestScript#clickDepartment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.atmecs.practo.testscripts.SelectPharmacyTestScript#isRedirectionCorrect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.atmecs.practo.testscripts.SelectProductTestScript#productSelect</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pain</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

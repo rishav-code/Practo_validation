@@ -6,8 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import com.atmecs.practo.constant.FilePath;
 import com.atmecs.practo.util.ReadProp;
@@ -19,9 +19,9 @@ public class TestBase {
 	public static String browser;
 	int downloadFile;
 
-	@BeforeSuite
+	@BeforeTest
 	public void intitailizeBrowser() throws IOException {
-
+		System.out.println("Initializing browser");
 		baseClass = ReadProp.loadProperty(FilePath.CONFIG_FILE);
 		url = baseClass.getProperty("url");
 		browser = baseClass.getProperty("browser");
@@ -42,7 +42,7 @@ public class TestBase {
 
 	}
 
-	@AfterSuite
+	@AfterTest
 	public void clodeDriver() {
 		driver.close();
 

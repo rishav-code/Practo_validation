@@ -2,21 +2,20 @@ package com.atmecs.practo.pages;
 
 import com.atmecs.practo.constant.Findloc;
 import com.atmecs.practo.helper.CommonUtlity;
+import com.atmecs.practo.testbase.TestBase;
 
-public class ProductCheckout  {
+public class ProductCheckout extends TestBase {
 	Findloc loc = new Findloc();
 	
 	
-	public void checkOut(String city) {
+	public void checkOut(String city) throws InterruptedException {
+		
 		CommonUtlity.clickAndSendText(loc.getlocator("loc.selectcity.click"), 30, city);
+		//Thread.sleep(3000);
 		CommonUtlity.clickElement(loc.getlocator("loc.hyderabad.click"));
-		try {
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	
+			Thread.sleep(4000);
+		
 	}
 
 }

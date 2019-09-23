@@ -5,7 +5,9 @@
     <classes>
       <class name="com.atmecs.practo.testscripts.ProductCheckoutTestScript">
         <methods>
-          <include name="checkout" invocation-numbers="0"/>
+          <include name="intitailizeBrowser"/>
+          <include name="clodeDriver"/>
+          <include name="productSelect" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.atmecs.practo.testscripts.ProductCheckoutTestScript -->
     </classes>

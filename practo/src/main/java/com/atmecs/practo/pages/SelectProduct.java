@@ -17,14 +17,17 @@ public class SelectProduct extends TestBase {
 		}
 		CommonUtlity.isElementVisible("loc.selectproduct.balm.click");
 		CommonUtlity.clickAndSendText(loc.getlocator("loc.searchmed.click"), 30, medicine);
+	}
+		public void selectPainMed() {
 		CommonUtlity.clickElement(loc.getlocator("loc.searchmed.click"));
 
 		CommonUtlity.isElementVisible("loc.selectmed.dpdn");
 		CommonUtlity.clickElement(loc.getlocator("loc.selectmed.dpdn"));
 		CommonUtlity.clickElement(loc.getlocator("loc.viewcart.click"));
 		driver.navigate().back();
+		
 	}
-
+	
 	public void productAdd() {
 		
 		CommonUtlity.isElementVisible("loc.selectproduct.balm.click");

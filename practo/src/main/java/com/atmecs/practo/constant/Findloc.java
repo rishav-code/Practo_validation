@@ -6,18 +6,18 @@ import java.util.Properties;
 import com.atmecs.practo.util.ReadProp;
 
 public class Findloc {
-	static Properties phptravelsloc;
+	static Properties practoloc;
 
 	public Findloc() {
 		try {
-			phptravelsloc = ReadProp.loadProperty(FilePath.LOCATOR_FILE);
+			practoloc = ReadProp.loadProperty(FilePath.LOCATOR_FILE);
 		} catch (IOException e) {
 			e.getMessage();
 		}
 	}
 
 	public String getlocator(String key) {
-		String value = phptravelsloc.getProperty(key);
+		String value = practoloc.getProperty(key);
 		return value;
 
 	}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="checkoutTest(failed)">
+    <classes>
+      <class name="com.atmecs.practo.testscripts.ProductCheckoutTestScript">
+        <methods>
+          <include name="intitailizeBrowser"/>
+          <include name="clodeDriver"/>
+          <include name="checkout" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.atmecs.practo.testscripts.ProductCheckoutTestScript -->
+    </classes>
+  </test> <!-- checkoutTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
